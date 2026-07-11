@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nearby Colleges</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #f4f7fb;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      color: #4a4a4a;
+      margin-bottom: 20px;
+    }
+
+    .college-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .college-card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .college-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    .college-name {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #007bff;
+      margin-bottom: 5px;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .college-name:hover {
+      text-decoration: underline;
+      color: #0056b3;
+    }
+
+    .college-location {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 8px;
+    }
+
+    .college-type {
+      display: inline-block;
+      background: #e0f2fe;
+      color: #0369a1;
+      font-size: 0.85rem;
+      padding: 4px 10px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🏫 Nearby Colleges (Hosur & Krishnagiri)</h1>
+
+  <div class="college-list">
+    <div class="college-card">
+     <a href="https://www.google.com/maps/place/Adhiyamaan+College+of+Engineering/@12.7168387,77.8674187,15.9z/data=!4m6!3m5!1s0x3bae70c830f1125f:0x55d856c47cfec47a!8m2!3d12.717928!4d77.8700387!16s%2Fm%2F05p1m88?entry=ttu&g_ep=EgoyMDI1MDkxMC4wIKXMDSoASAFQAw%3D%3D" 
+   target="_blank"  class="college-name"> Adhiyamaan College of Engineering </a>
+     <div class="college-location">Hosur, Tamil Nadu</div>
+     <span class="college-type">Engineering & Technology</span>
+    </div>
+
+    <div class="college-card">
+      <a href="https://www.google.com/maps/place/Er.+Perumal+Manimekalai+College+of+Engineering/@12.6750201,77.965741,17z/data=!3m1!4b1!4m6!3m5!1s0x3badd7b86d5c525b:0x96adb36aef28bc00!8m2!3d12.6750201!4d77.9683159!16s%2Fg%2F1tt1r3r1?entry=ttu&g_ep=EgoyMDI1MDkxMC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="college-name">
+        Perumal Manimekalai College of Engineering
+      </a>
+      <div class="college-location">Hosur, Tamil Nadu</div>
+      <span class="college-type">Engineering</span>
+    </div>
+
+    <div class="college-card">
+      <a href="https://www.google.com/maps/place/Er.+Perumal+Manimekalai+Polytechnic+College,+Hosur/@12.6738163,77.9652172,17z/data=!3m1!4b1!4m6!3m5!1s0x3badd7ac16a6a4df:0xd882c790adda328c!8m2!3d12.6738163!4d77.9677921!16s%2Fg%2F1tdvn57b?entry=ttu&g_ep=EgoyMDI1MDkxMC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="college-name">
+        Er. Perumal Manimekalai Polytechnic College
+      </a>
+      <div class="college-location">Hosur, Tamil Nadu</div>
+      <span class="college-type">Polytechnic</span>
+    </div>
+
+    <div class="college-card">
+      <a href="https://www.google.com/maps/place/Government+Arts+%26+Science+College+(men)+KRISHNAGIRI./@12.5327609,78.2448033,17z/data=!3m1!4b1!4m6!3m5!1s0x3bac34977f252ca3:0x12e98303f9f36cc2!8m2!3d12.5327609!4d78.2473782!16s%2Fg%2F11fz0xxjmn?entry=ttu&g_ep=EgoyMDI1MDkxMC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="college-name">
+        Government Arts College for Men
+      </a>
+      <div class="college-location">Krishnagiri, Tamil Nadu</div>
+      <span class="college-type">Arts & Science</span>
+    </div>
+
+    <div class="college-card">
+      <a href="https://www.google.com/maps/place/Govt+Arts+College+for+Women/@12.5277347,78.1966093,17z/data=!3m1!4b1!4m6!3m5!1s0x3bac3359209d97e5:0xbd52f2c5d0217961!8m2!3d12.5277347!4d78.1991842!16s%2Fg%2F11fz0vy3hc?entry=ttu&g_ep=EgoyMDI1MDkxMC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="college-name">
+        Government Arts College for Women
+      </a>
+      <div class="college-location">Krishnagiri, Tamil Nadu</div>
+      <span class="college-type">Arts & Science</span>
+    </div>
+
+    <div class="college-card">
+      <a href="https://www.google.com/maps/place/Sri+Vidya+Mandir+Arts+%26+Science+College/@12.1989563,78.542971,17z/data=!3m1!4b1!4m6!3m5!1s0x3bac5df5716fc579:0xfb204ff7ea93d548!8m2!3d12.1989563!4d78.5455459!16s%2Fg%2F1tctk6nb?entry=ttu&g_ep=EgoyMDI1MDkxMC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="college-name">
+        Sri Vidya Mandir Arts & Science College
+      </a>
+      <div class="college-location">Krishnagiri, Tamil Nadu</div>
+      <span class="college-type">Arts & Science</span>
+    </div>
+  </div>
+
+</body>
+</html>
